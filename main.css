@@ -1,0 +1,30 @@
+
+.water {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-top: 153px;
+    left:0;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.water-layer2 {
+    background-image: url(assets/images/slader.png);
+}
+
+.water-layer1 {
+    background-image: url(assets/images/slader3.png);
+}
+
+.water-layer3 {
+    background-image: url(assets/images/caja.png);
+}
+
+.water-layer4 {
+     background-image: url(assets/images/corazon.png);
+}
+
+.water-layer5 {
+     background-image: url(assets/images/letras.png);
+}

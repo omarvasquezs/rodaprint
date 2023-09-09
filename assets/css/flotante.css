@@ -1,0 +1,90 @@
+
+.float{
+	position:fixed;
+
+  bottom:40px;
+  left:40px;
+ 
+  
+  text-align:center;
+  font-size:15px;
+  z-index:100;
+  animation: bot-to-top 2s ;
+    
+}
+
+.float1{
+    position:fixed;
+ 
+  bottom:40px;
+  right:40px;
+
+  color:#FFF;
+  
+  text-align:center;
+  font-size:15px;
+  z-index:100;
+  animation: bot-to-top 2s ;
+    
+	
+    
+}
+
+.boton4:hover {
+
+  transform: scale(1.5); 
+
+    }
+.boton4 {
+    transition: transform .7s; 
+    
+}
+
+
+
+.my-float{
+	font-size:24px;
+	margin-top:18px;
+}
+
+.my-float1{
+	font-size:24px;
+	margin-top:18px;
+}
+
+a#menu-share + ul{
+  visibility: hidden;
+}
+
+a#menu-share:hover + ul{
+  visibility: visible;
+  animation: scale-in 0.5s;
+}
+
+a#menu-share i{
+	animation: rotate-in 0.5s;
+}
+
+a#menu-share:hover > i{
+	animation: rotate-out 0.5s;
+}
+
+@keyframes bot-to-top {
+    0%   {bottom:-40px}
+    50%  {bottom:40px}
+}
+
+@keyframes scale-in {
+    from {transform: scale(0);opacity: 0;}
+    to {transform: scale(1);opacity: 1;}
+}
+
+@keyframes rotate-in {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes rotate-out {
+    from {transform: rotate(360deg);}
+    to {transform: rotate(0deg);}
+}

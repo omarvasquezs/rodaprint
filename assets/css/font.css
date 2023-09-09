@@ -1,0 +1,47 @@
+ @font-face {
+  
+	  font-family:'MarkPro-Bold';
+  src: url('../fonts/MarkPro-Bold.ttf') format('truetype');
+	 
+    }
+
+ @font-face {
+  
+	  font-family:'effra';
+  src: url('../fonts/effra-regular.ttf') format('truetype');
+	 
+    }
+
+ @font-face {
+  
+	  font-family:'MarkPro-Ligth';
+  src: url('../fonts/MarkPro-Ligth.ttf') format('truetype');
+	 
+    }
+
+    
+.llamanos{
+    color: #5d686e;
+    font-size: 15px;
+    font-family: MarkPro-Bold;
+
+font-weight: 700;
+	letter-spacing: 3.5px;
+	   
+
+	
+}
+
+.llamanos-numero{
+    color: #5d686e;
+    font-size: 25px;
+    font-family: MarkPro-Bold;
+    margin-top: -5px;
+	font-weight: bold;
+	margin-top: -10px;
+	line-height:18px;
+	
+	
+	
+}
+
