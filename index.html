@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -138,6 +137,15 @@
             right: -6px;
             width: 130px;
             background: url(assets/images/iconos/der.png) no-repeat -2px 10px;
+        }
+        /* Hide the controls by default */
+        video::-webkit-media-controls {
+        display: none !important;
+        }
+
+        /* Show the controls when hovering over the video */
+        video:hover::-webkit-media-controls {
+        display: initial !important;
         }
     </style>
 </head>
@@ -322,36 +330,20 @@
                                     src="assets/images/iconos/facebook.png"></a> <a
                                 href="https://www.instagram.com/rodaprint/" target="_blank"><img
                                     src="assets/images/iconos/instagram.png"></a></nav>
-
-
-
-
-
-
-
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
             </nav>
         </div>
     </header>
     <!-- End Header -->
-
-
     <!--    INICIO DE VIDEO ---->
     <section id="mu-counter">
         <div class="row">
             <div class="col-md-12">
                 <div class="mu-featured-slide">
-
-
                     <video controls loop autoplay muted name="media">
                         <source src="assets/videos/rodaprint.mp4" type="video/mp4">
                     </video>
-
-
-
-
-
                 </div>
             </div>
         </div>
