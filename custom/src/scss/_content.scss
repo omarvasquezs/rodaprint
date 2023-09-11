@@ -1,0 +1,54 @@
+// Content
+
+// Video front page
+.front-video {
+  // Hide the controls by default
+  video::-webkit-media-controls {
+    display: none !important;
+  }
+  // Show the controls when hovering over the video
+  &:hover::-webkit-media-controls {
+    display: initial !important;
+  }
+}
+
+// Nav bar (menu)
+.front-nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 18px 15px;
+    li > a {
+        &:hover, &:focus, &:active {
+            color: $orange!important;
+        }
+    }
+}
+
+// Nav bar (telephone)
+.telephone-container {
+    margin-top: 16px;
+    float: right;
+    margin-right: 15px;
+    .llamanos, .llamanos-numero {
+        color: $gray;
+        font-family: MarkPro-Bold;
+        font-weight: bold;
+    }
+    .llamanos {
+        font-size: 15px;
+        letter-spacing: 3.5px;
+    }
+    .llamanos-numero {
+        font-size: 25px;
+        margin-top: -5px;
+        margin-top: -10px;
+        line-height: 18px;
+    }
+    &:hover {
+        .llamanos,.llamanos-numero {
+            color: $orange;
+        }
+    }
+}

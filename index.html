@@ -39,152 +39,17 @@
         type='text/css' media='all' />
     <script src="assets/js/jquery.min1.js"></script>
     <script type='text/javascript' src='assets/js/jquerywsp.js'></script>
-    <script type='text/javascript' src='assets/js/scriptswsp97e9.js?ver=1.7.9'></script>
     <!-- end link wsp y coptiza-->
     <script type="text/javascript" src="jquery.min.js"></script>
-    <link rel="icon" href="https://www.rodaprint.com.pe/wp-content/uploads/2018/02/cropped-roda-32x32.png"
-        sizes="32x32">
-    <link rel="icon" href="https://www.rodaprint.com.pe/wp-content/uploads/2018/02/cropped-roda-192x192.png"
-        sizes="192x192">
-    <link rel="apple-touch-icon-precomposed"
-        href="https://www.rodaprint.com.pe/wp-content/uploads/2018/02/cropped-roda-180x180.png">
-    <meta name="msapplication-TileImage"
-        content="https://www.rodaprint.com.pe/wp-content/uploads/2018/02/cropped-roda-270x270.png">
-    <style>
-        /* Hide the controls by default */
-        video::-webkit-media-controls {
-        display: none !important;
-        }
-
-        /* Show the controls when hovering over the video */
-        video:hover::-webkit-media-controls {
-        display: initial !important;
-        }
-    </style>
+    <link rel="icon" href="custom/src/images/cropped-roda-32x32.png" sizes="32x32">
+    <link rel="icon" href="custom/src/images/cropped-roda-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon-precomposed" href="custom/src/images/cropped-roda-180x180.png">
+    <meta name="msapplication-TileImage" content="custom/src/images/cropped-roda-270x270.png">
+    <link href="custom/style.css" rel="stylesheet">
 </head>
 <body>
     <div id="arcontactus"></div>
     <script src="assets/js/jquery.contactus.mine606.js?version=1.7.9"></script>
-    <script type="text/javascript">
-        var zaloWidgetInterval;
-        var tawkToInterval;
-        var skypeWidgetInterval;
-        var lcpWidgetInterval;
-        var closePopupTimeout;
-        var lzWidgetInterval;
-        var arcuOptions;
-        var arCuMessages = ["\u00a1Hola!", "\u00bfTienes alguna pregunta?", "Por favor use este bot\u00f3n<br \/>\n\u00a1para contáctarnos!"];
-        var arCuLoop = false;
-        var arCuCloseLastMessage = false;
-        var arCuPromptClosed = false;
-        var _arCuTimeOut = null;
-        var arCuDelayFirst = 2000;
-        var arCuTypingTime = 2000;
-        var arCuMessageTime = 4000;
-        var arCuClosedCookie = 0;
-        var arcItems = [];
-        window.addEventListener('load', function () {
-            jQuery('#arcontactus').remove();
-            var $arcuWidget = jQuery('<div>', {
-                id: 'arcontactus'
-            });
-            jQuery('body').append($arcuWidget);
-            arCuClosedCookie = arCuGetCookie('arcu-closed');
-            jQuery('#arcontactus').on('arcontactus.init', function () {
-                if (arCuClosedCookie) {
-                    return false;
-                }
-                arCuShowMessages();
-            });
-            jQuery('#arcontactus').on('arcontactus.closeMenu', function () {
-                arCuCreateCookie('arcumenu-closed', 1, 1);
-            });
-            jQuery('#arcontactus').on('arcontactus.openMenu', function () {
-                clearTimeout(_arCuTimeOut);
-                if (!arCuPromptClosed) {
-                    arCuPromptClosed = true;
-                    jQuery('#arcontactus').contactUs('hidePrompt');
-                }
-            });
-            jQuery('#arcontactus').on('arcontactus.openCallbackPopup', function () {
-                clearTimeout(_arCuTimeOut);
-                if (!arCuPromptClosed) {
-                    arCuPromptClosed = true;
-                    jQuery('#arcontactus').contactUs('hidePrompt');
-                }
-            });
-
-            jQuery('#arcontactus').on('arcontactus.hidePrompt', function () {
-                clearTimeout(_arCuTimeOut);
-                if (arCuClosedCookie != "1") {
-                    arCuClosedCookie = "1";
-                    arCuPromptClosed = true;
-                    arCuCreateCookie('arcu-closed', 1, 0);
-                }
-            });
-            var arcItem = {};
-            arcItem.id = 'msg-item-2';
-            arcItem.class = 'msg-item-whatsapp';
-            arcItem.title = "WhatsApp";
-            arcItem.icon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></svg>';
-            arcItem.href = 'https://wa.me/51945325508';
-            arcItem.color = '#00BB2D';
-            arcItems.push(arcItem);
-            var arcItem = {};
-            arcItem.id = 'msg-item-1';
-            arcItem.class = 'msg-item-facebook-messenger';
-            arcItem.title = "Messenger";
-            arcItem.icon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224 32C15.9 32-77.5 278 84.6 400.6V480l75.7-42c142.2 39.8 285.4-59.9 285.4-198.7C445.8 124.8 346.5 32 224 32zm23.4 278.1L190 250.5 79.6 311.6l121.1-128.5 57.4 59.6 110.4-61.1-121.1 128.5z"></path></svg>';
-            arcItem.href = 'https://www.facebook.com/messages/t/107972727266902';
-            arcItem.color = '#567AFF';
-            arcItems.push(arcItem);
-
-            arcuOptions = {
-                wordpressPluginVersion: '1.7.9',
-                buttonIcon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></svg>',
-                drag: false,
-                mode: 'regular',
-                buttonIconUrl: 'assets/fonts/msg.svg',
-                showMenuHeader: false,
-                menuHeaderText: "How would you like to contact us?",
-                showHeaderCloseBtn: false,
-                headerCloseBtnBgColor: '#008749',
-                headerCloseBtnColor: '#ffffff',
-                itemsIconType: 'rounded',
-                align: 'right',
-                reCaptcha: false,
-                reCaptchaKey: '',
-                countdown: 0,
-                theme: '#00bb2d',
-                buttonText: "Chat",
-                buttonSize: 'medium',
-                menuSize: 'large',
-                phonePlaceholder: '+XXX-XX-XXX-XX-XX',
-                callbackSubmitText: 'Solicitar llamada',
-                errorMessage: 'Error de conexión. Actualice la página e intente nuevamente.',
-                callProcessText: 'Te estamos llamando al telefono',
-                callSuccessText: 'Gracias.<br />Le devolveremos la llamada pronto.',
-                iconsAnimationSpeed: 600,
-                iconsAnimationPause: 2000,
-                callbackFormText: 'Por favor, introduzca su número de teléfono<br />y te llamamos pronto',
-                items: arcItems,
-                ajaxUrl: '#',
-                promptPosition: 'top',
-                callbackFormFields: {
-                    phone: {
-                        name: 'phone',
-                        enabled: true,
-                        required: true,
-                        type: 'tel',
-                        label: '',
-                        placeholder: "+XX-XXX-XXX-XXX"
-                    },
-                },
-                action: 'arcontactus_request_callback'
-            };
-            jQuery('#arcontactus').contactUs(arcuOptions);
-        });
-    </script>
     <!-- Start Header -->
     <header id="mu-header" class="" role="banner">
         <div class="container">
@@ -204,23 +69,15 @@
                     </div>
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav mu-menu /*navbar-right*/">
+                        <ul class="nav navbar-nav mu-menu front-nav-bar">
                             <li><a href="">NOSOTROS</a></li>
                             <li><a href="">PRODUCTOS</a></li>
                             <li><a href="">SECTORES</a></li>
                             <li><a href="">CONTÁCTANOS</a></li>
                         </ul>
-                        <nav class="nav social-nav /*pull-right*/ d-none d-lg-inline"
-                            style="margin-top: 16px;float:right; text-align: justify-all;margin-right:15px;">
-
-                            <a href="tel:51945325508"><span class="llamanos">LLÁMANOS</span><br><span
-                                    class="llamanos-numero">945325508</span></a>
-                        </nav>
-                        <nav class="nav social-nav /*pull-right*/ d-none d-lg-inline" style="margin-top: 16px;"><a
-                                href="https://www.facebook.com/RodaPrintPeru" target="_blank"><img
-                                    src="assets/images/iconos/facebook.png"></a> <a
-                                href="https://www.instagram.com/rodaprint/" target="_blank"><img
-                                    src="assets/images/iconos/instagram.png"></a></nav>
+                        <nav class="telephone-container text-center">
+                            <a href="tel:51945325508"><span class="llamanos">LLÁMANOS AL</span><br><span class="llamanos-numero">945-325-508</span></a>
+                        </nav>                        
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
             </nav>
@@ -231,7 +88,7 @@
     <section id="mu-counter">
         <div class="row">
             <div class="col-md-12">
-                <div class="mu-featured-slide">
+                <div class="mu-featured-slide front-video">
                     <video controls loop autoplay muted name="media">
                         <source src="assets/videos/rodaprint.mp4" type="video/mp4">
                     </video>
@@ -415,10 +272,10 @@
                                         style="color: black;text-align: center !important;font-weight: 700;">Síguenos
                                         en nuestras redes:
                                         <a href="https://www.facebook.com/RodaPrintPeru"><img
-                                                src="assets/images/iconos/facebook-red.png" alt=""
+                                                src="custom/src/images/facebook-red.png" alt=""
                                                 style="padding-left: 25px;"></a>
                                         <a href="https://www.instagram.com/rodaprint/"><img
-                                                src="assets/images/iconos/instagram-red.png" alt=""
+                                                src="custom/src/images/instagram-red.png" alt=""
                                                 style="padding-left: 25px;"></a>
 
                                     </span>
@@ -429,7 +286,7 @@
                                 </div>
                                 <div class="col-sm-6 col-md-3" style="text-align:center !important;">
                                     <span style="color: black;text-align: center !important;font-weight: 700;">
-                                        <img src="assets/images/iconos/pin-red.png" alt="" style="padding-right: 20px;">
+                                        <img src="custom/src/images/pin-red.png" alt="" style="padding-right: 20px;">
                                         Av Nicolas Arriola #2000 Int 15, Luis - Lima 07001 Lima, Peru Teléfono: 945325508</span>
                                 </div>
                             </div>
@@ -451,5 +308,6 @@
     <script type="text/javascript" src="assets/js/app.js"></script>
     <!-- Custom js -->
     <script type="text/javascript" src="assets/js/custom.js"></script>
+    <script type="text/javascript" src="custom/theme.js"></script>    
 </body>
 </html>
