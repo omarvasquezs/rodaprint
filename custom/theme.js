@@ -130,10 +130,10 @@
     });
     function arCuGetCookie(cookieName) {
       if (document.cookie.length > 0) {
-        c_start = document.cookie.indexOf(cookieName + "=");
+        var c_start = document.cookie.indexOf(cookieName + "=");
         if (c_start != -1) {
           c_start = c_start + cookieName.length + 1;
-          c_end = document.cookie.indexOf(";", c_start);
+          var c_end = document.cookie.indexOf(";", c_start);
           if (c_end == -1) {
             c_end = document.cookie.length;
           }
