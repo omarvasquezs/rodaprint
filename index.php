@@ -117,7 +117,7 @@
                     <div class="d-flex justify-content-center">
                         <!-- Add your social icons here, e.g., Font Awesome icons -->
                         <a style="margin-right: 15px;" href="https://www.facebook.com/RodaPrintPeru" target="_blank"><img src="assets/images/facebook_icon.png" alt="Facebook"></a>
-                        <a style="margin-right: 15px;" href="https://www.instagram.com/rodaprint" target="_blank><img src="assets/images/instagram_icon.png" alt="Instagram""></a>
+                        <a style="margin-right: 15px;" href="https://www.instagram.com/rodaprint" target="_blank"><img src="assets/images/instagram_icon.png" alt="Instagram""></a>
                     </div>
                 </div>
                 
