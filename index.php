@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>RodaPrint Comunicando Ideas...</title>    
     <!-- FAVICON ICONS -->
-    <link rel="icon" href="custom/src/images/cropped-roda-32x32.png" sizes="32x32">
-    <link rel="icon" href="custom/src/images/cropped-roda-192x192.png" sizes="192x192">
-    <link rel="apple-touch-icon-precomposed" href="custom/src/images/cropped-roda-180x180.png">
-    <meta name="msapplication-TileImage" content="custom/src/images/cropped-roda-270x270.png">
+    <link rel="icon" href="assets/images/cropped-roda-32x32.png" sizes="32x32">
+    <link rel="icon" href="assets/images/cropped-roda-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon-precomposed" href="assets/images/cropped-roda-180x180.png">
+    <meta name="msapplication-TileImage" content="assets/images/cropped-roda-270x270.png">
     <!-- Bootstrap CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- Main Style -->
