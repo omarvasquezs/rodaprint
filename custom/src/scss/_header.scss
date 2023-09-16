@@ -1,0 +1,68 @@
+// Header
+
+// Nav bar (menu)
+.front-nav-bar {
+    @include mq(small) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        margin: 18px 15px;
+        li > a {
+            &:hover, &:focus, &:active {
+                color: $orange!important;
+            }
+        }
+    }    
+}
+// Nav bar (telephone)
+.telephone-container {
+    margin-top: 16px;
+    float: right;
+    margin-right: 15px;
+    @include mq-max(medium-large) {
+        display: none;
+    }
+    .llamanos, .llamanos-numero {
+        color: $gray;
+        font-family: MarkPro-Bold;
+        font-weight: bold;
+    }
+    .llamanos {
+        font-size: 15px;
+        letter-spacing: 3.5px;
+    }
+    .llamanos-numero {
+        font-size: 25px;
+        margin-top: -5px;
+        margin-top: -10px;
+        line-height: 18px;
+    }
+    &:hover {
+        .llamanos,.llamanos-numero {
+            color: $orange;
+        }
+    }
+}
+// Nav bar logo
+.navbar-brand {
+    @include mq(small) {
+        img {
+            margin-top: -9px;
+        }
+    }
+    @include mq-max(small) {
+        padding: 0;
+        img {
+            position: absolute;
+            width: 8rem;
+            margin: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+// Nav bar dropdown
+.navbar-default .navbar-collapse {
+    background-color: $white;
+}
