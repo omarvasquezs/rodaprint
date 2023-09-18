@@ -57,8 +57,5 @@
             </div>
         </div>
     </div>
-    <div class="row">
-            <div class="col-5"></div>
-    </div>
 </div>
 <?php include 'layouts/footer.php'; ?>
