@@ -1,20 +1,33 @@
 @media screen and (min-width: 540.1px) {
-  .front-nav-bar {
+  .navbar-custom .custom-menu {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 70%;
-    margin: 18px 15px;
   }
-  .front-nav-bar li > a:hover, .front-nav-bar li > a:focus, .front-nav-bar li > a:active {
+  .navbar-custom .custom-menu li > a:hover, .navbar-custom .custom-menu li > a:focus, .navbar-custom .custom-menu li > a:active {
     color: #f29900 !important;
   }
 }
 
-.telephone-container {
-  margin-top: 16px;
-  float: right;
-  margin-right: 15px;
+.navbar-custom .custom-menu li a {
+  border-bottom: 2px solid transparent;
+  color: #000;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 0 10px 2px;
+  margin: 10px 15px 5px;
+  transition: all 0.5s;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+.navbar-custom .container {
+  max-width: 1170px;
+}
+
+.telephone-container a {
+  text-decoration: none;
 }
 @media screen and (max-width: 960px) {
   .telephone-container {
@@ -38,35 +51,88 @@
 }
 .telephone-container:hover .llamanos, .telephone-container:hover .llamanos-numero {
   color: #f29900;
-}
-
-@media screen and (min-width: 540.1px) {
-  .navbar-brand img {
-    margin-top: -9px;
-  }
-}
-@media screen and (max-width: 540px) {
-  .navbar-brand {
-    padding: 0;
-  }
-  .navbar-brand img {
-    position: absolute;
-    width: 8rem;
-    margin: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+  transition: all 0.3s ease-in-out;
 }
 
 .navbar-default .navbar-collapse {
   background-color: #fff;
 }
 
-.front-video video::-webkit-media-controls {
-  display: none !important;
+.navbar .dropdown-menu {
+  display: none;
 }
-.front-video:hover::-webkit-media-controls {
-  display: initial !important;
+
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item:hover {
+  background-color: transparent;
+}
+
+.navbar-custom .navbar-brand img {
+  max-width: 7rem;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "MarkPro-Bold";
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  color: #1c1b1b;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "MarkPro-Bold";
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 1.13;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 20px;
+}
+
+.mision-vision {
+  color: #5d686e;
+  font-size: 22px;
+  font-family: "effra";
+  letter-spacing: -0.5px;
+  line-height: 26pt;
+}
+
+footer a:link, footer a[role=link] {
+  text-decoration: none;
+  color: #2f2f2f;
+}
+footer a:visited, footer a:hover {
+  color: #f29900;
+  transition: all 0.3s ease-in-out;
 }
 
 @font-face {
@@ -78,6 +144,6 @@
   src: url("./src/fonts/effra-regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: "MarkPro-Ligth";
+  font-family: "MarkPro-Light";
   src: url("./src/fonts/MarkPro-Ligth.ttf") format("truetype");
 }

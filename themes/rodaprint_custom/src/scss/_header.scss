@@ -1,13 +1,12 @@
 // Header
 
 // Nav bar (menu)
-.front-nav-bar {
+.navbar-custom .custom-menu {
     @include mq(small) {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 70%;
-        margin: 18px 15px;
         li > a {
             &:hover, &:focus, &:active {
                 color: $orange!important;
@@ -15,18 +14,32 @@
         }
     }    
 }
+.navbar-custom .custom-menu li a {
+    border-bottom: 2px solid transparent;
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0 10px 2px;
+    margin: 10px 15px 5px;
+    transition: all 0.5s;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+}
+.navbar-custom .container {
+    max-width: 1170px;
+}
 // Nav bar (telephone)
 .telephone-container {
-    margin-top: 16px;
-    float: right;
-    margin-right: 15px;
+    a {
+        text-decoration: none;
+    }
     @include mq-max(medium-large) {
         display: none;
     }
     .llamanos, .llamanos-numero {
         color: $gray;
         font-family: MarkPro-Bold;
-        font-weight: bold;
+        font-weight: bold;        
     }
     .llamanos {
         font-size: 15px;
@@ -41,28 +54,24 @@
     &:hover {
         .llamanos,.llamanos-numero {
             color: $orange;
-        }
-    }
-}
-// Nav bar logo
-.navbar-brand {
-    @include mq(small) {
-        img {
-            margin-top: -9px;
-        }
-    }
-    @include mq-max(small) {
-        padding: 0;
-        img {
-            position: absolute;
-            width: 8rem;
-            margin: 0;
-            left: 50%;
-            transform: translateX(-50%);
+            transition: $transition;
         }
     }
 }
 // Nav bar dropdown
 .navbar-default .navbar-collapse {
     background-color: $white;
+}
+.navbar .dropdown-menu {
+    display: none;
+}  
+.navbar .dropdown:hover .dropdown-menu {
+    display: block;    
+}
+.dropdown-item:hover {
+    background-color: transparent;
+}
+// NAVBAR LOGO
+.navbar-custom .navbar-brand img {
+    max-width: 7rem;
 }

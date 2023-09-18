@@ -1,0 +1,12 @@
+// Footer
+
+footer {
+    a:link, a[role="link"] {
+        text-decoration: none;
+        color: $black2;
+    }
+    a:visited, a:hover {
+        color: $orange;
+        transition: $transition;
+    }
+}
