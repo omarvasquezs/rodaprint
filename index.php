@@ -14,7 +14,7 @@
     <!-- Start main content -->
     <div class="container mb-5" id="nosotros">
         <div class="row">            
-            <div class="col-9 mx-auto text-center mision-vision">
+            <div class="col-9 mx-auto text-center gray-text">
                 <img class="mb-5" src="assets/images/logo.jpg">
                 <h2>¿Quiénes Somos?</h2>
                 <p>En Rodaprint nuestro compromiso a la innovación y al excelente servicio es respaldado por nuestro equipo profesional. Siempre manteniéndonos a la vanguardia de la industria en calidad total, diversidad de servicios, y cuidado del medio ambiente.</p>
