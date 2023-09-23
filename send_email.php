@@ -20,7 +20,7 @@ $emailData = [
     'FromName' => 'Notificaciones Rodaprint',
     'Subject' => $_POST['email'].' quiere contactarse',
     'Text-part' => "Name: $name\nEmail: $email\nTelephone: $telephone\nMessage: $message",
-    'Recipients' => [['Email' => 'omarvs91@gmail.com']], // Your email address
+    'Recipients' => [['Email' => 'gerencia@rodaprint.com.pe']], // Your email address
 ];
 
 // Send the email
