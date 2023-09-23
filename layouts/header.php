@@ -49,7 +49,7 @@
                     <a class="nav-link" href="#">CLIENTES</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">CONTÁCTANOS</a>
+                    <a class="nav-link" data-bs-toggle="modal" href="#contactanos">CONTÁCTANOS</a>
                     </li>
                 </ul>
                 <span class="telephone-container text-center">

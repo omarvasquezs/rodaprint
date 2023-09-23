@@ -1,3 +1,42 @@
+    <!-- Contact modal -->
+    <div class="container">
+        <!-- Modal Popup -->
+        <div class="modal fade" id="contactanos" tabindex="-1" aria-labelledby="contactanosModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="contactanosModalLabel">Envienos un mensaje</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="contactForm" method="post" action="send_email.php">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nombres</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="tel" class="form-label">Telefono</label>
+                                <input type="tel" class="form-control" id="telephone" name="telephone" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End modal -->
     <!-- Start Google Map -->
     <div class="container-fluid mb-5">
         <div class="row">
