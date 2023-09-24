@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'FromName' => 'Notificaciones Rodaprint',
         'Subject' => $_POST['email'].' quiere contactarse',
         'Text-part' => "Nombres: $name\nCorreo: $email\nTelefono: $telephone\nMensaje: $message",
-        'Recipients' => [['Email' => 'omarvs91@gmail.com']], // Your email address
+        'Recipients' => [['Email' => 'gerencia@rodaprint.com.pe']], // Your email address
     ];
 
     // Send the email
