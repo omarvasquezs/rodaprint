@@ -19,7 +19,7 @@
                                 <input type="email" class="form-control" id="email" name="email" required>
                             </div>
                             <div class="mb-3">
-                                <label for="tel" class="form-label">Telefono</label>
+                                <label for="telephone" class="form-label">Telefono</label>
                                 <input type="tel" class="form-control" id="telephone" name="telephone" required>
                             </div>
                             <div class="mb-3">
