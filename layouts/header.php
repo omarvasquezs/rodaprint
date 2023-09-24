@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>RodaPrint "Comunicando Ideas"</title>    
+    <title>RodaPrint "Comunicando Ideas"</title>
     <!-- FAVICON ICONS -->
     <link rel="icon" href="assets/images/cropped-roda-32x32.png" sizes="32x32">
     <link rel="icon" href="assets/images/cropped-roda-192x192.png" sizes="192x192">
@@ -15,7 +15,9 @@
     <!-- STYLES FOR CHAT WIDGET (DO NOT REMOVE) -->
     <link rel='stylesheet' id='jquery.contactus.css-css' href='libraries/contactus/css/jquery.contactus.min97e9.css?ver=1.7.9' type='text/css' media='all' />
     <!-- CUSTOM THEME CSS -->
-    <link href="themes/rodaprint_custom/style.css" rel="stylesheet">    
+    <link href="themes/rodaprint_custom/style.css" rel="stylesheet">
+    <!-- Add the reCAPTCHA script -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
     <!-- START CHAT WIDGET -->

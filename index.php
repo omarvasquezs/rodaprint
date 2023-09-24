@@ -13,7 +13,7 @@
     <!-- FIN DE VIDEO --->
     <!-- Start main content -->
     <div class="container mb-5" id="nosotros">
-        <div class="row">            
+        <div class="row">
             <div class="col-9 mx-auto text-center gray-text">
                 <img class="mb-5" src="assets/images/logo.jpg">
                 <h2>¿Quiénes Somos?</h2>

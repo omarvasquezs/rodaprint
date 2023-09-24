@@ -26,6 +26,8 @@
                                 <label for="message" class="form-label">Mensaje</label>
                                 <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
                             </div>
+                            <!-- Add the reCAPTCHA widget here with your site key -->
+                            <div class="g-recaptcha" data-sitekey="6LeUN04oAAAAAHJ9irKSjWCKwi2b4ZYxX59VANfB"></div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                                 <button type="submit" class="btn btn-primary">Enviar</button>
@@ -58,12 +60,12 @@
                         <a class="pe-4" href="https://www.facebook.com/RodaPrintPeru" target="_blank"><img src="assets/images/facebook_icon.png" alt="Facebook"></a>
                         <a href="https://www.instagram.com/rodaprint" target="_blank"><img src="assets/images/instagram_icon.png" alt="Instagram"></a>
                     </div>
-                </div>                
+                </div>
                 <!-- Column 2: Logo -->
                 <div class="col-md-4 col-sm-12 mb-4 text-center order-3 order-md-2">
                     <!-- Replace the src attribute with your logo image URL -->
                     <img src="assets/images/logo.jpg" alt="Logo" class="img-responsive center-block">
-                </div>                
+                </div>
                 <!-- Column 3: Address -->
                 <div class="col-md-4 col-sm-12 mb-4 text-center order-2 order-md-3">
                     <h4>CONTACTANOS</h4>
@@ -84,7 +86,7 @@
     <script src="libraries/contactus/js/jquery.contactus.mine606.js?version=1.7.9" defer></script>
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <!-- Custom js -->    
-    <script type="text/javascript" src="themes/rodaprint_custom/theme.js"></script>    
+    <!-- Custom js -->
+    <script type="text/javascript" src="themes/rodaprint_custom/theme.js"></script>
 </body>
 </html>

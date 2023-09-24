@@ -2,7 +2,7 @@
 <div class="container mt-5 mb-5 gray-text">
     <div class="row mb-5">
         <div class="col-10 mx-auto">
-            <h1>Impresión <code>GRAN FORMATO</code></h1>            
+            <h1>Impresión <code>GRAN FORMATO</code></h1>
         </div>
     </div>
     <div class="row">
