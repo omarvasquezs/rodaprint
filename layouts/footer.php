@@ -26,7 +26,7 @@
                                 <label for="message" class="form-label">Mensaje</label>
                                 <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
                             </div>
-                            <div class="g-recaptcha" data-sitekey="6LdwdU4oAAAAAO3hzxIBLKqi5DwnffGaNmFm27S7"></div>
+                            <div class="g-recaptcha" data-sitekey="6Lc8ik4oAAAAADLND8n3Ff9y6iFu_ivFFMR6ff5B"></div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                                 <button type="submit" class="g-recaptcha btn btn-primary" data-sitekey="6Lc8ik4oAAAAADLND8n3Ff9y6iFu_ivFFMR6ff5B" data-callback='onSubmit' data-action='submit'>Enviar</button>
