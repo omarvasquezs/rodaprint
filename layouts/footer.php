@@ -29,7 +29,7 @@
                             <div class="g-recaptcha" data-sitekey="6LdwdU4oAAAAAO3hzxIBLKqi5DwnffGaNmFm27S7"></div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                <button type="submit" class="btn btn-primary">Enviar</button>
+                                <button type="submit" class="g-recaptcha btn btn-primary" data-sitekey="6Lc8ik4oAAAAADLND8n3Ff9y6iFu_ivFFMR6ff5B" data-callback='onSubmit' data-action='submit'>Enviar</button>
                             </div>
                         </form>
                     </div>
@@ -79,6 +79,12 @@
     </footer>
     <!-- End footer -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- RECAPTCHA v3 -->
+    <script>
+        function onSubmit(token) {
+            document.getElementById("contactanos").submit();
+        }
+    </script>
     <!-- JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <!-- CHAT WIDGET JS -->

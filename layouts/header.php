@@ -17,7 +17,7 @@
     <!-- CUSTOM THEME CSS -->
     <link href="themes/rodaprint_custom/style.css" rel="stylesheet">
     <!-- Add the reCAPTCHA script -->
-    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 <body>
     <!-- START CHAT WIDGET -->
