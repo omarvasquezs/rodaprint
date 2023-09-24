@@ -26,8 +26,6 @@
                                 <label for="message" class="form-label">Mensaje</label>
                                 <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
                             </div>
-                            <!-- Add the reCAPTCHA widget here with your site key -->
-                            <div class="g-recaptcha" data-sitekey="6LeUN04oAAAAAHJ9irKSjWCKwi2b4ZYxX59VANfB"></div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                                 <button type="submit" class="btn btn-primary">Enviar</button>
