@@ -16,8 +16,6 @@
     <link rel='stylesheet' id='jquery.contactus.css-css' href='libraries/contactus/css/jquery.contactus.min97e9.css?ver=1.7.9' type='text/css' media='all' />
     <!-- CUSTOM THEME CSS -->
     <link href="themes/rodaprint_custom/style.css" rel="stylesheet">
-    <!-- Add the reCAPTCHA script -->
-    <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 <body>
     <!-- START CHAT WIDGET -->
@@ -48,7 +46,7 @@
                     </ul>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">CLIENTES</a>
+                    <a class="nav-link" href="clientes.php">CLIENTES</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" data-bs-toggle="modal" href="#contactanos">CONTÁCTANOS</a>

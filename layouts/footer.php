@@ -28,7 +28,7 @@
                             </div>                            
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                <button type="submit" class="g-recaptcha btn btn-primary" data-sitekey="6Lc8ik4oAAAAADLND8n3Ff9y6iFu_ivFFMR6ff5B" data-callback='onSubmit' data-action='submit'>Enviar</button>
+                                <button type="submit" class="btn btn-primary">Enviar</button>
                             </div>
                         </form>
                     </div>
