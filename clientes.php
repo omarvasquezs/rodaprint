@@ -1,8 +1,8 @@
 <?php include 'layouts/header.php'; ?>
 <div class="container mt-5 mb-5 gray-text">
     <div class="row mb-5">
-        <div class="col-10 mx-auto">
-            <h1><code>Nuestros Clientes</code></h1>
+        <div class="col-10 mx-auto text-center">
+            <h1><code>Nuestros Clientes - Ellos confían en Nosotros</code></h1>
         </div>
     </div>
     <div class="row">
